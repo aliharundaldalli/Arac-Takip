@@ -92,9 +92,33 @@ Projeyi yerel sunucunuzda (Localhost) çalıştırmak için aşağıdaki adımla
     define('DB_PASS', '');
     define('DB_NAME', 'arac_yonetim');
     ```
+---
 
+### 4. Güvenlik ve Giriş İşlemleri
+Giriş güvenliği, şifre sıfırlama ve yetkilendirme ekranları.
 
-###  4. Bağımlılıkların Kurulumu
+| Giriş Ekranı | Şifremi Unuttum |
+|:---:|:---:|
+| ![Login Ekranı](screenshots/login.png) | ![Şifre Sıfırlama İsteği](screenshots/sifremi_unuttum.png) |
+
+| Şifre Sıfırlama (Token) | Zorunlu Şifre Değişimi |
+|:---:|:---:|
+| ![Yeni Şifre Belirleme](screenshots/sifre-sifirla.png) | ![Zorla Değiştir](screenshots/zorla_sifre_degistirme.png) |
+
+---
+
+### 5. E-Posta Bildirim Sistemi (SMTP)
+Sistem, durumu değişen araçlar ve hesap güvenliği için otomatik HTML formatında e-postalar gönderir.
+
+| Kayıt Başarılı Maili | Araç Onay Maili |
+|:---:|:---:|
+| ![Kayıt Maili](screenshots/arac_kayit_maili.png) | ![Onay Maili](screenshots/arac_onay_maili.png) |
+
+| Şifre Sıfırlama Maili | SMTP Ayar Paneli |
+|:---:|:---:|
+| ![Şifre Maili](screenshots/sifremi_unuttum_maili.png) | ![SMTP Ayarları](screenshots/smtp_ayarlari.png) |
+
+###  6. Bağımlılıkların Kurulumu
 
 Projede e-posta gönderimi için PHPMailer kullanılır.
 
