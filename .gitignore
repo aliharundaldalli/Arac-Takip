@@ -1,0 +1,24 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Configuration
+includes/config.php
+
+# Dependencies
+vendor/
+composer.lock
+
+# Uploads
+uploads/
+assets/img/logo_*
+assets/img/favicon_*
+
+# Logs
+error_log
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp

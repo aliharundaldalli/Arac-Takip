@@ -1,0 +1,106 @@
+/* Common Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f4f6;
+    margin: 0;
+}
+
+/* Navbar Common Styles */
+.navbar-custom {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.95rem;
+    margin: 0 5px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.dropdown-item {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+/* Login Page Specifics (Reusable classes) */
+.glass-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown .7s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.brand-circle {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 1.2rem;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-custom {
+    border: none;
+    padding: 12px;
+    color: white;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: .25s;
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.form-control-custom {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: rgba(255, 255, 255, 0.65);
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
