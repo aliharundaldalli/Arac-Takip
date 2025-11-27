@@ -112,7 +112,7 @@ Sistem, durumu değişen araçlar ve hesap güvenliği için otomatik HTML forma
 
 | Kayıt Başarılı Maili | Araç Onay Maili |
 |:---:|:---:|
-| ![Kayıt Maili](screenshots/arac_kayit_maili.png) | ![Onay Maili](screenshots/arac_onay_maili.png) |
+| ![Kayıt Maili](screenshots/aracin_kayit_maili.png) | ![Onay Maili](screenshots/aracin_onay_maili.png) |
 
 | Şifre Sıfırlama Maili | SMTP Ayar Paneli |
 |:---:|:---:|
