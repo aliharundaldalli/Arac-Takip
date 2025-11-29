@@ -71,6 +71,32 @@ Personel ve öğrencilerin işlem yaptığı ekranlar.
 
 ---
 
+### 4. Güvenlik ve Giriş İşlemleri
+Giriş güvenliği, şifre sıfırlama ve yetkilendirme ekranları.
+
+| Giriş Ekranı | Şifremi Unuttum |
+|:---:|:---:|
+| ![Login Ekranı](screenshots/login.png) | ![Şifre Sıfırlama İsteği](screenshots/sifremi_unuttum.png) |
+
+| Şifre Sıfırlama (Token) | Zorunlu Şifre Değişimi |
+|:---:|:---:|
+| ![Yeni Şifre Belirleme](screenshots/sifre-sifirla.png) | ![Zorla Değiştir](screenshots/zorla_sifre_degistirme.png) |
+
+---
+
+### 5. E-Posta Bildirim Sistemi
+Sistem, durumu değişen araçlar ve hesap güvenliği için otomatik HTML formatında e-postalar gönderir.
+
+| Kayıt Başarılı Maili | Araç Onay Maili |
+|:---:|:---:|
+| ![Kayıt Maili](screenshots/aracin_kayit_maili.png) | ![Onay Maili](screenshots/aracin_onay_maili.png) |
+
+| Şifre Sıfırlama Maili | SMTP Ayar Paneli |
+|:---:|:---:|
+| ![Şifre Maili](screenshots/sifremi_unuttum_maili.png) | ![SMTP Ayarları](screenshots/smtp_ayarlari.png) |
+
+---
+
 ## 🛠️ Kurulum
 
 Projeyi yerel sunucunuzda (Localhost) çalıştırmak için aşağıdaki adımları izleyin.
@@ -92,43 +118,11 @@ Projeyi yerel sunucunuzda (Localhost) çalıştırmak için aşağıdaki adımla
     define('DB_PASS', '');
     define('DB_NAME', 'arac_yonetim');
     ```
----
 
-### 4. Güvenlik ve Giriş İşlemleri
-Giriş güvenliği, şifre sıfırlama ve yetkilendirme ekranları.
-
-| Giriş Ekranı | Şifremi Unuttum |
-|:---:|:---:|
-| ![Login Ekranı](screenshots/login.png) | ![Şifre Sıfırlama İsteği](screenshots/sifremi_unuttum.png) |
-
-| Şifre Sıfırlama (Token) | Zorunlu Şifre Değişimi |
-|:---:|:---:|
-| ![Yeni Şifre Belirleme](screenshots/sifre-sifirla.png) | ![Zorla Değiştir](screenshots/zorla_sifre_degistirme.png) |
-
----
-
-### 5. E-Posta Bildirim Sistemi (SMTP)
-Sistem, durumu değişen araçlar ve hesap güvenliği için otomatik HTML formatında e-postalar gönderir.
-
-| Kayıt Başarılı Maili | Araç Onay Maili |
-|:---:|:---:|
-| ![Kayıt Maili](screenshots/aracin_kayit_maili.png) | ![Onay Maili](screenshots/aracin_onay_maili.png) |
-
-| Şifre Sıfırlama Maili | SMTP Ayar Paneli |
-|:---:|:---:|
-| ![Şifre Maili](screenshots/sifremi_unuttum_maili.png) | ![SMTP Ayarları](screenshots/smtp_ayarlari.png) |
-
-###  6. Bağımlılıkların Kurulumu
-
-Projede e-posta gönderimi için PHPMailer kullanılır.
-
-Terminalde çalıştırın:
+### Adım 3: Bağımlılıkların Kurulumu
+Projede e-posta gönderimi için PHPMailer kullanılır. Terminalde çalıştırın:
 
 ```bash
-composer install
-```
-
----
 
 ## 📂 Proje Dizin Yapısı
 
@@ -142,18 +136,34 @@ assets/      → CSS, JS ve görseller
 uploads/     → Ruhsat/resim dosyaları
 ```
 
----
+-----
 
 ## ✉️ SMTP Yapılandırması
 
 Mail gönderimi için Admin panelindeki:  
-**Ayarlar → SMTP Ayarları**  
-ekranına erişip e-posta sunucusu bilgilerinizi girin.
+**Ayarlar → SMTP Ayarları** ekranına erişip e-posta sunucusu bilgilerinizi girin.
 
----
+-----
+
+## 🤝 Katkıda Bulunma
+
+1.  Bu repoyu forklayın.
+2.  Yeni bir özellik dalı oluşturun (`git checkout -b yeni-ozellik`).
+3.  Değişikliklerinizi commit edin (`git commit -m 'Yeni özellik eklendi'`).
+4.  Dalınızı pushlayın (`git push origin yeni-ozellik`).
+5.  Bir Pull Request oluşturun.
+
+-----
+
+## 📄 Lisans
+
+Bu proje [MIT Lisansı](https://www.google.com/search?q=LICENSE) altında lisanslanmıştır.
+
+-----
 
 ## 👨‍💻 Geliştirici
 
 **Ali Harun DALDALLI**
 
----
+```
+```
