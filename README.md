@@ -123,7 +123,8 @@ Projeyi yerel sunucunuzda (Localhost) çalıştırmak için aşağıdaki adımla
 Projede e-posta gönderimi için PHPMailer kullanılır. Terminalde çalıştırın:
 
 ```bash
-
+composer install
+```
 ## 📂 Proje Dizin Yapısı
 
 ```text
